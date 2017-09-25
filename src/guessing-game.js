@@ -8,11 +8,11 @@ class GuessingGame {
     setRange(min, max) {
         this._numMin = min;
         this._numMax = max;
-        this._number = Math.floor( this._numMin + (this._numMax - this._numMin)/2 );
+        this._number = Math.round( (this._numMin + (this._numMax - this._numMin)/2) );
     }
 
     guess() {
-        this._number = Math.floor( this._numMin + (this._numMax - this._numMin)/2 );
+        this._number = Math.round( (this._numMin + (this._numMax - this._numMin)/2) );
         return this._number;
     }
 
